@@ -11,9 +11,21 @@ The test platform for Vishpala's tools: it runs verification runs and end-to-end
 
 A tool's own job and an OSAT manager's scenario steps stay in that tool's repository; the platform runs them.
 
+## Use
+
+`--repository` names the checkout under test; the Windows driver also takes uc-portage and uc-automa from checkouts beside it:
+
+```sh
+uc-test-platform linux --repository <checkout> --instance <container> --snapshot <clean-snapshot>
+uc-test-platform windows --repository <checkout> --instance <vm> --snapshot <clean-snapshot> --ssh <host>
+uc-test-platform cut selftest <container> --snapshot <clean-snapshot>
+```
+
+`linux` runs the repository's `tests/e2e_scenario.py` in an Incus container; `windows` runs the unit tests of uc-portage, uc-automa and the repository, the network cut's self-test, the scenario and an offline install from wheels, in a virtual machine over SSH. Each restores its instance to the clean snapshot before and after, and writes its record into the repository under test, under `tests/e2e/<platform>/`. `cut` runs the network cut's own commands.
+
 ## Status
 
-Not released. Nothing has moved here yet: the Windows driver and the network cut are still in osat-manager-restic. The verification runs for uc-portage 0.2.0 and uc-automa 0.2.0 use this repository at a recorded commit, and its first release follows uc-automa 0.2.0, whose wheel step it calls.
+Not released. The Linux and Windows drivers and the network cut moved here from osat-manager-restic on 2026-10-11, unchanged apart from taking the repository under test as `--repository`; the verification run of uc-automa 0027 is still to be built. The verification runs for uc-portage 0.2.0 and uc-automa 0.2.0 use this repository at a recorded commit, and its first release follows uc-automa 0.2.0, whose wheel step it calls.
 
 ## Develop
 
