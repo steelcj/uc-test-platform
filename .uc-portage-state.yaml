@@ -1,0 +1,57 @@
+format: 1
+synced:
+  LICENSES/MIT.txt:
+    offering: license-mit
+    source: files/LICENSES/MIT.txt
+    source_sha256: 87e9b7fb3f4b078b3f9814d7b6d5d8b2eb520ff44b7f42b58f75e5424d5137be
+    synced_at: '2026-10-12T02:02:40Z'
+    dest_sha256: 87e9b7fb3f4b078b3f9814d7b6d5d8b2eb520ff44b7f42b58f75e5424d5137be
+  LICENSE:
+    offering: license-mit
+    source: files/LICENSES/MIT.txt
+    source_sha256: 87e9b7fb3f4b078b3f9814d7b6d5d8b2eb520ff44b7f42b58f75e5424d5137be
+    synced_at: '2026-10-12T02:02:40Z'
+    dest_sha256: 87e9b7fb3f4b078b3f9814d7b6d5d8b2eb520ff44b7f42b58f75e5424d5137be
+  LICENSES/CC-BY-4.0.txt:
+    offering: license-cc-by-4-0
+    source: files/LICENSES/CC-BY-4.0.txt
+    source_sha256: d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744
+    synced_at: '2026-10-12T02:02:40Z'
+    dest_sha256: d557539df68e771cc1eedcc91d13f70fca930e508d11eedcafa4b15db49e3744
+  REUSE.toml:
+    offering: reuse
+    source: files/REUSE.toml
+    source_sha256: 357f19e5f1791bff20a1ae54d7648dd9770d20c04cab968e02d6961c7ee9fe23
+    synced_at: '2026-10-12T02:02:40Z'
+    dest_sha256: 357f19e5f1791bff20a1ae54d7648dd9770d20c04cab968e02d6961c7ee9fe23
+  CHANGELOG.md:
+    offering: changelog
+    source: '{language}/CHANGELOG.md'
+    source_sha256: 979f23ec11e7bdab87f228e16e44cc0acef3f0e9055bc68f930652e4ffbd79f4
+    synced_at: '2026-10-12T02:02:40Z'
+    dest_sha256: 979f23ec11e7bdab87f228e16e44cc0acef3f0e9055bc68f930652e4ffbd79f4
+  VERSION:
+    offering: version-file
+    source: files/VERSION
+    source_sha256: e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67
+    synced_at: '2026-10-12T02:02:40Z'
+    dest_sha256: e9dd8507f4bf0c6f42458e41aea833ad0bd3f6127272335eee9bf4d58541ed67
+  CLAUDE.md::uc-automa-signpost:
+    offering: claude-signpost
+    source: '{language}/signpost.md'
+    source_sha256: 58b300f316ad900b1bf706d2ffa27835f74fe31bceafa6ce5e3be02a9310079c
+    synced_at: '2026-10-12T02:02:40Z'
+    dest_sha256: 58b300f316ad900b1bf706d2ffa27835f74fe31bceafa6ce5e3be02a9310079c
+    block: uc-automa-signpost
+  .gitattributes:
+    offering: line-endings
+    source: files/.gitattributes
+    source_sha256: d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c
+    synced_at: '2026-10-12T02:02:40Z'
+    dest_sha256: d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c
+  .editorconfig:
+    offering: editorconfig
+    source: files/.editorconfig
+    source_sha256: 043dead84ab209e9586ffb57c6d8df55673c08a54a288f53e1c62c71c3a519c2
+    synced_at: '2026-10-12T02:02:40Z'
+    dest_sha256: 043dead84ab209e9586ffb57c6d8df55673c08a54a288f53e1c62c71c3a519c2

@@ -1,0 +1,14 @@
+format: 1
+repository: uc-test-platform
+layout: python-tool
+automa_version: 0.1.0
+language: en-ca
+subscribe:
+- license-mit
+- license-cc-by-4-0
+- reuse
+- changelog
+- version-file
+- claude-signpost
+- line-endings
+- editorconfig

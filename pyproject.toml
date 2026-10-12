@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uc-test-platform"
+dynamic = ["version"]
+description = "Runs verification runs and end-to-end scenarios on clean test instances, and writes each run's record into the repository it verified."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Christopher Steel" }]
+dependencies = []
+
+[project.scripts]
+uc-test-platform = "uc_test_platform.cli:main"
+
+[tool.setuptools]
+packages = ["uc_test_platform"]
+
+[tool.setuptools.package-dir]
+"" = "lib"
+
+[tool.setuptools.dynamic]
+# VERSION is the single source of the version.
+version = { file = "VERSION" }

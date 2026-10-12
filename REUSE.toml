@@ -1,0 +1,11 @@
+version = 1
+
+[[annotations]]
+path = ["lib/**", "tests/**", "schemas/**", "conf/**", "pyproject.toml", "VERSION", "manager.yaml", ".uc-automa.yaml", ".uc-portage-state.yaml", ".*.assets/**", ".gitattributes", ".editorconfig", ".gitignore", ".pre-commit-config.yaml"]
+SPDX-FileCopyrightText = "Christopher Steel"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = ["en-ca/**", "README.md", "CHANGELOG.md", "ROADMAP.md", "CONTRIBUTING.md", "CLAUDE.md"]
+SPDX-FileCopyrightText = "Christopher Steel"
+SPDX-License-Identifier = "CC-BY-4.0"
